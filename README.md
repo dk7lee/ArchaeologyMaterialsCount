@@ -2,7 +2,7 @@
 
 Install with this link (Alt1 Required): 
 
-alt1://addapp/https://zerogwafa.github.io/ComponentCounter/appconfig.json
+alt1://addapp/https://dk7lee.github.io/ArchaeologyMaterialsCount/appconfig.json
 
 Tracks Invention materials from the following sources:
 - Standard Dissassembling
