@@ -16,17 +16,31 @@ html {
                                   supported by Chrome and Opera */
 }
 
-.rare {
+.zarosian {
     font-weight: bold;
     color: #FF0000;
 }
 
-.uncommon {
+.zamorakian {
     color: #FF8000;
 }
 
-.common {}
-
+.saradominist{
+font-weight: bold;
+    color: #FF0000;
+    
+   .bandosian{
+font-weight: bold;
+    color: #FF0000; 
+}
+    .armadylean{
+font-weight: bold;
+    color: #FF0000;
+    }
+    .agnostic{
+font-weight: bold;
+    color: #FF0000;
+    }
 .main {
     position: fixed;
     overflow-y: scroll;
