@@ -1,10 +1,12 @@
 var reader = new ChatBoxReader();
 reader.readargs = {
     colors: [
-        a1lib.mixcolor(255, 255, 255), //Common Mats
-        a1lib.mixcolor(255, 128, 0), //Uncommon Mats
-        a1lib.mixcolor(255, 165, 0), //Scavenging comps
-        a1lib.mixcolor(255, 0, 0) //Rare Mats
+        a1lib.mixcolor(76, 0, 153),//Zarosian
+        a1lib.mixcolor(255, 0, 0), //zamorakian
+        a1lib.mixcolor(0, 128,255 ), //saradominist
+        a1lib.mixcolor(153, 76, 0), //bandosian
+        a1lib.mixcolor(255, 255, 0),//armadylean
+        a1lib.mixcolor(64, 64, 64), //agnostic
     ],
     backwards: true
 };
@@ -56,16 +58,26 @@ function readChatbox() {
 
 function buildTable() {
     for (x in compsList) {
-        if (compsList[x].type === "rare") {
-            $(".rare").append(`<tr data-name="${x}"><td>${x.split(" ")[0]}</td><td class='qty'></td></tr>`);
+        if (compsList[x].type === "zarosian") {
+            $(".zarosian").append(`<tr data-name="${x}"><td>${x.split(" ")[0]}</td><td class='qty'></td></tr>`);
         }
-        if (compsList[x].type === "uncommon") {
-            $(".uncommon").append(`<tr data-name="${x}"><td>${x.split(" ")[0]}</td><td class='qty'></td></tr>`);
+        if (compsList[x].type === "zamorakian") {
+            $(".zamorakian").append(`<tr data-name="${x}"><td>${x.split(" ")[0]}</td><td class='qty'></td></tr>`);
         }
-        if (compsList[x].type === "common") {
-            $(".common").append(`<tr data-name="${x}"><td>${x.split(" ")[0]}</td><td class='qty'></td></tr>`);
+        if (compsList[x].type === "saradominist") {
+            $(".saradominist").append(`<tr data-name="${x}"><td>${x.split(" ")[0]}</td><td class='qty'></td></tr>`);
         }
-    }
+         if (compsList[x].type === "bandosian") {
+            $(".bandosian").append(`<tr data-name="${x}"><td>${x.split(" ")[0]}</td><td class='qty'></td></tr>`);
+        }    
+        if (compsList[x].type === "armadylean") {
+            $(".armadylean").append(`<tr data-name="${x}"><td>${x.split(" ")[0]}</td><td class='qty'></td></tr>`);
+        } 
+        if (compsList[x].type === "agnostic") {
+            $(".agnostic").append(`<tr data-name="${x}"><td>${x.split(" ")[0]}</td><td class='qty'></td></tr>`);
+        }   
+         }
+        
 }
 
 function tidyTable(flashRow) {
